@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelDesktopNotifier;
+namespace NunoMaduro\LaravelDesktopNotifier;
 
 use Joli\JoliNotif\Notifier;
 use Joli\JoliNotif\Notification;
@@ -17,7 +17,10 @@ class LaravelDesktopNotifierServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(Notifier::class, function ($app) {
-            return NotifierFactory::create($app['config']['app.notifiers']);
+
+            $config = $app['config']['app.notifiers'];
+
+            return NotifierFactory::create(is_array($config) ? $config : []);
         });
 
         $this->app->bind(Notification::class, function () {
