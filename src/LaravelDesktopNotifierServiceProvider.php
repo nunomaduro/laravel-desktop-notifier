@@ -1,12 +1,25 @@
 <?php
 
+/**
+ * This file is part of Laravel Desktop Notifier.
+ *
+ * (c) Nuno Maduro <enunomaduro@gmail.com>
+ *
+ *  For the full copyright and license information, please view the LICENSE
+ *  file that was distributed with this source code.
+ */
+
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use Joli\JoliNotif\Notifier;
-use Joli\JoliNotif\Notification;
+use Joli\JoliNotif\Notification as ConcreteNotification;
 use Joli\JoliNotif\NotifierFactory;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class LaravelDesktopNotifierServiceProvider
+ *
+ * @package NunoMaduro\LaravelDesktopNotifier
+ */
 class LaravelDesktopNotifierServiceProvider extends ServiceProvider
 {
     /**
@@ -24,7 +37,7 @@ class LaravelDesktopNotifierServiceProvider extends ServiceProvider
         });
 
         $this->app->bind(Notification::class, function () {
-            return new Notification;
+            return new ConcreteNotification;
         });
     }
 }
