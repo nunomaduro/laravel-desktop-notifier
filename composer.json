@@ -1,0 +1,18 @@
+{
+    "name": "nunomaduro/laravel-desktop-notifier",
+    "require": {
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
+        "jolicode/jolinotif": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "Nuno Maduro",
+            "email": "enunomaduro@gmail.com"
+        }
+    ],
+    "autoload": {
+         "psr-4": {
+            "LaravelDesktopNotifier\\": "src/"
+        }
+    }
+}
