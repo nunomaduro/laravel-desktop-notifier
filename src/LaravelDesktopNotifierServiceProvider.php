@@ -11,14 +11,12 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
+use Illuminate\Support\ServiceProvider;
 use Joli\JoliNotif\Notification as ConcreteNotification;
 use Joli\JoliNotif\NotifierFactory;
-use Illuminate\Support\ServiceProvider;
 
 /**
- * Class LaravelDesktopNotifierServiceProvider
- *
- * @package NunoMaduro\LaravelDesktopNotifier
+ * Class LaravelDesktopNotifierServiceProvider.
  */
 class LaravelDesktopNotifierServiceProvider extends ServiceProvider
 {
@@ -30,14 +28,13 @@ class LaravelDesktopNotifierServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(Notifier::class, function ($app) {
-
             $config = $app['config']['app.notifiers'];
 
             return NotifierFactory::create(is_array($config) ? $config : []);
         });
 
         $this->app->bind(Notification::class, function () {
-            return new ConcreteNotification;
+            return new ConcreteNotification();
         });
     }
 }

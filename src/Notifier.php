@@ -14,11 +14,8 @@ namespace NunoMaduro\LaravelDesktopNotifier;
 use Joli\JoliNotif\Notifier as BaseNotifier;
 
 /**
- * Interface Notification
- *
- * @package NunoMaduro\LaravelDesktopNotifier
+ * Interface Notification.
  */
 interface Notifier extends BaseNotifier
 {
-
 }

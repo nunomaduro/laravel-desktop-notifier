@@ -12,9 +12,7 @@
 namespace NunoMaduro\LaravelDesktopNotifier;
 
 /**
- * Interface Notification
- *
- * @package NunoMaduro\LaravelDesktopNotifier
+ * Interface Notification.
  */
 interface Notification
 {
