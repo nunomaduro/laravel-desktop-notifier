@@ -57,6 +57,7 @@ class Zonda extends Command
         );
     }
 }
+```
 
 ## Git branching model
 
