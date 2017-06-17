@@ -4,7 +4,7 @@ Laravel Desktop Notifier
 Laravel Desktop Notifier was created by, and is maintained by [Nuno Maduro](https://github.com/nunomaduro), and is a [JoliNotif](https://github.com/jolicode/JoliNotif) wrapper for [Laravel 5](http://laravel.com). Feel free to check out the [change log](CHANGELOG.md), [releases](nunomaduro/laravel-desktop-notifier/releases), [license](LICENSE), and [contribution guidelines](CONTRIBUTING.md).
 
 <p align="center">
-	<a href="https://styleci.io/repos/15090687"><img src="https://styleci.io/repos/15090687/shield" alt="StyleCI Status"></img></a>
+	<a href="https://styleci.io/repos/94141482"><img src="https://styleci.io/repos/94141482/shield" alt="StyleCI Status"></img></a>
 	<a href="https://travis-ci.org/nunomaduro/nunomaduro/laravel-desktop-notifier"><img src="https://img.shields.io/travis/nunomaduro/nunomaduro/laravel-desktop-notifier/stable.svg?style=flat-square" alt="Build Status"></img></a>
 	<a href="https://scrutinizer-ci.com/g/nunomaduro/nunomaduro/laravel-desktop-notifier/code-structure"><img src="https://img.shields.io/scrutinizer/coverage/g/nunomaduro/nunomaduro/laravel-desktop-notifier.svg?style=flat-square" alt="Coverage Status"></img></a>
 	<a href="https://scrutinizer-ci.com/g/nunomaduro/nunomaduro/laravel-desktop-notifier"><img src="https://img.shields.io/scrutinizer/g/nunomaduro/nunomaduro/laravel-desktop-notifier.svg?style=flat-square" alt="Quality Score"></img></a>
