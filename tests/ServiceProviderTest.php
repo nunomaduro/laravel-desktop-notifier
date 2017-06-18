@@ -11,9 +11,9 @@
 
 namespace NunoMaduro\Tests\LaravelDesktopNotifier;
 
-use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
-use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification;
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
 
 /**
  * This is the service provider test class.
