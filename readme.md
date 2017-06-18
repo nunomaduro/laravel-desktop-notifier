@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/nunomaduro/laravel-desktop-notifier/stable/docs/icon.png"></p>
+
 Laravel Desktop Notifier
 ================
 
