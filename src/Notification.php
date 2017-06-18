@@ -12,7 +12,7 @@
 namespace NunoMaduro\LaravelDesktopNotifier;
 
 use Joli\JoliNotif\Notification as BaseNotification;
-use \NunoMaduro\LaravelDesktopNotifier\Contracts\Notification as NotificationContract;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification as NotificationContract;
 
 /**
  * The concrete implementation of the notification.

@@ -11,10 +11,10 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use Joli\JoliNotif\NotifierFactory;
 use Illuminate\Support\ServiceProvider;
-use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier as NotifierContract;
+use Joli\JoliNotif\NotifierFactory;
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification as NotificationContract;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier as NotifierContract;
 
 /**
  * The is the Laravel Desktop Notifier service provider class.

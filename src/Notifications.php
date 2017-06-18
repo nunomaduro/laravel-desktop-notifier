@@ -11,8 +11,8 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
 
 /**
  * An helper trait to include on Laravel console commands.
@@ -22,9 +22,9 @@ use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification;
 trait Notifications
 {
     /**
-     * @param  string $text
-     * @param  string $body
-     * @param  null $icon
+     * @param string $text
+     * @param string $body
+     * @param null   $icon
      *
      * @return void
      */
