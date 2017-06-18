@@ -19,9 +19,9 @@ namespace NunoMaduro\LaravelDesktopNotifier;
 trait Notifications
 {
     /**
-     * @param  string  $text
-     * @param  string  $body
-     * @param  string|null  $icon
+     * @param string      $text
+     * @param string      $body
+     * @param string|null $icon
      *
      * @return void
      */
