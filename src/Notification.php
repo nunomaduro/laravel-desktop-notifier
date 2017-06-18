@@ -11,44 +11,14 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
+use Joli\JoliNotif\Notification as BaseNotification;
+use \NunoMaduro\LaravelDesktopNotifier\Contracts\Notification as NotificationContract;
+
 /**
- * Interface Notification.
+ * The concrete implementation of the notification.
+ *
+ * @author Nuno Maduro <enunomaduro@gmail.com>
  */
-interface Notification
+class Notification extends BaseNotification implements NotificationContract
 {
-    /**
-     * @return string
-     */
-    public function getTitle();
-
-    /**
-     * @param string $title
-     *
-     * @return \NunoMaduro\LaravelDesktopNotifier\Notification
-     */
-    public function setTitle($title);
-
-    /**
-     * @return string
-     */
-    public function getBody();
-
-    /**
-     * @param string $body
-     *
-     * @return \NunoMaduro\LaravelDesktopNotifier\Notification
-     */
-    public function setBody($body);
-
-    /**
-     * @return string
-     */
-    public function getIcon();
-
-    /**
-     * @param string $icon
-     *
-     * @return \NunoMaduro\LaravelDesktopNotifier\Notification
-     */
-    public function setIcon($icon);
 }

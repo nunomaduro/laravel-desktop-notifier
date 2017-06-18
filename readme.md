@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/nunomaduro/laravel-desktop-notifier/stable/docs/icon.png"></p>
+<p align="center"><img height="120px" src="https://raw.githubusercontent.com/nunomaduro/laravel-desktop-notifier/stable/docs/icon.png"></p>
 
 Laravel Desktop Notifier
 ================
@@ -37,12 +37,29 @@ Once Laravel Desktop Notifier is installed, you need to register the service pro
 
 * `'NunoMaduro\LaravelDesktopNotifierServiceProvider'`
 
-## Usage
+## Usage with Trait
 
 ```php
 use Illuminate\Console\Command;
-use NunoMaduro\LaravelDesktopNotifier\Notifier;
-use NunoMaduro\LaravelDesktopNotifier\Notification;
+use NunoMaduro\LaravelDesktopNotifier\Notifications;
+
+class Zonda extends Command
+{
+    use Notifications;
+
+    public function handle()
+    {
+        $this->notify('Hello Web Artisan', 'Love beautiful code? We do too!');
+    }
+}
+```
+
+## Usage with Laravel IOC container
+
+```php
+use Illuminate\Console\Command;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification;
 
 class Zonda extends Command
 {
@@ -50,12 +67,12 @@ class Zonda extends Command
     {
         $notifier = app(Notifier::class);
 
-        $notifier->send(
-            app(Notification::class)
-                ->setTitle('Notification title')
-                ->setBody('This is the body of your notification')
-                ->setIcon(__DIR__.'/path/to/your/icon.png')
-        );
+        $notification = app(Notification::class)
+            ->setTitle('Hello Web Artisan')
+            ->setBody('Love beautiful code? We do too!')
+            ->setIcon(__DIR__ . '/path/to/your/icon.png');
+
+        $notifier->send($notification);
     }
 }
 ```
