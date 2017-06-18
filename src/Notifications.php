@@ -9,7 +9,7 @@
  *  file that was distributed with this source code.
  */
 
-namespace Illuminate\Notifications;
+namespace NunoMaduro\LaravelDesktopNotifier;
 
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification;
