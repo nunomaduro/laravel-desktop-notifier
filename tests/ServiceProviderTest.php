@@ -11,8 +11,8 @@
 
 namespace NunoMaduro\Tests\LaravelDesktopNotifier;
 
-use NunoMaduro\LaravelDesktopNotifier\Notifier;
-use NunoMaduro\LaravelDesktopNotifier\Notification;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification;
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
 /**

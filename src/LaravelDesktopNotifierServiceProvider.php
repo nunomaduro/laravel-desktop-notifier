@@ -11,12 +11,13 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use Illuminate\Support\ServiceProvider;
-use Joli\JoliNotif\Notification as ConcreteNotification;
 use Joli\JoliNotif\NotifierFactory;
+use Illuminate\Support\ServiceProvider;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier as NotifierContract;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification as NotificationContract;
 
 /**
- * Class LaravelDesktopNotifierServiceProvider.
+ * The is the Laravel Desktop Notifier service provider class.
  *
  * @author Nuno Maduro <enunomaduro@gmail.com>
  */
@@ -29,14 +30,16 @@ class LaravelDesktopNotifierServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Notifier::class, function ($app) {
+        $this->app->singleton(NotifierContract::class, function ($app) {
             $config = $app['config']['app.notifiers'];
 
-            return NotifierFactory::create(is_array($config) ? $config : []);
+            $notifier = NotifierFactory::create(is_array($config) ? $config : []);
+
+            return new Notifier($notifier);
         });
 
-        $this->app->bind(Notification::class, function () {
-            return new ConcreteNotification();
+        $this->app->bind(NotificationContract::class, function () {
+            return new Notification();
         });
     }
 }

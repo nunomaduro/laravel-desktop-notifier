@@ -15,7 +15,7 @@ use GrahamCampbell\TestBench\AbstractPackageTestCase;
 use NunoMaduro\LaravelDesktopNotifier\LaravelDesktopNotifierServiceProvider;
 
 /**
- * Class AbstractTestCase
+ * Class AbstractTestCase.
  *
  * @author Nuno Maduro <enunomaduro@gmail.com>
  */
