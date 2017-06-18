@@ -13,6 +13,8 @@ namespace NunoMaduro\LaravelDesktopNotifier;
 
 /**
  * Interface Notification.
+ *
+ * @author Nuno Maduro <enunomaduro@gmail.com>
  */
 interface Notification
 {

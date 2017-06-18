@@ -17,11 +17,13 @@ use Joli\JoliNotif\NotifierFactory;
 
 /**
  * Class LaravelDesktopNotifierServiceProvider.
+ *
+ * @author Nuno Maduro <enunomaduro@gmail.com>
  */
 class LaravelDesktopNotifierServiceProvider extends ServiceProvider
 {
     /**
-     * Register the desktop notification factory implementation.
+     * Register the laravel desktop notifier implementation.
      *
      * @return void
      */

@@ -15,6 +15,8 @@ use Joli\JoliNotif\Notifier as BaseNotifier;
 
 /**
  * Interface Notification.
+ *
+ * @author Nuno Maduro <enunomaduro@gmail.com>
  */
 interface Notifier extends BaseNotifier
 {
