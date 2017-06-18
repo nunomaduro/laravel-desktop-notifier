@@ -11,9 +11,6 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification;
-use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
-
 /**
  * An helper trait to include on Laravel console commands.
  *
@@ -22,17 +19,17 @@ use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier;
 trait Notifications
 {
     /**
-     * @param string $text
-     * @param string $body
-     * @param null   $icon
+     * @param  string  $text
+     * @param  string  $body
+     * @param  string|null  $icon
      *
      * @return void
      */
     public function notify($text, $body, $icon = null)
     {
-        $notifier = app(Notifier::class);
+        $notifier = app(Contracts\Notifier::class);
 
-        $notification = app(Notification::class)
+        $notification = app(Contracts\Notification::class)
             ->setTitle($text)
             ->setBody($body)
             ->setIcon($icon);
