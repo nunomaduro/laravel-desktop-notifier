@@ -11,7 +11,6 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use Joli\JoliNotif\Notification;
 use Joli\JoliNotif\Notifier as BaseNotifier;
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier as NotifierContract;
 
@@ -56,7 +55,7 @@ class Notifier implements NotifierContract
     /**
      * {@inheritdoc}
      */
-    public function send(Notification $notification)
+    public function send(\Joli\JoliNotif\Notification $notification)
     {
         return $this->notifier->send($notification);
     }
