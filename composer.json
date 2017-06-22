@@ -31,6 +31,13 @@
     "config": {
         "preferred-install": "dist"
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NunoMaduro\\LaravelDesktopNotifier\\LaravelDesktopNotifierServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
