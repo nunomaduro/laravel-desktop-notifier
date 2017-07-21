@@ -35,7 +35,10 @@
         "laravel": {
             "providers": [
                 "NunoMaduro\\LaravelDesktopNotifier\\LaravelDesktopNotifierServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Notifier": "NunoMaduro\\LaravelDesktopNotifier\\Facaces\\Notifier"
+            }
         }
     },
     "minimum-stability": "dev",
