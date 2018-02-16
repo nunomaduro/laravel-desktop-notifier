@@ -11,8 +11,8 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use Joli\JoliNotif\NotifierFactory;
 use Illuminate\Console\Command;
+use Joli\JoliNotif\NotifierFactory;
 use Illuminate\Support\ServiceProvider;
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier as NotifierContract;
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification as NotificationContract;
@@ -43,8 +43,11 @@ class LaravelDesktopNotifierServiceProvider extends ServiceProvider
 
                 $notification = $this->app[Contracts\Notification::class]
                     ->setTitle($text)
-                    ->setBody($body)
-                    ->setIcon($icon);
+                    ->setBody($body);
+
+                if (! empty($icon)) {
+                    $notification->setIcon($icon);
+                }
 
                 $notifier->send($notification);
             }
