@@ -28,7 +28,7 @@ interface Notification
      *
      * @return \NunoMaduro\LaravelDesktopNotifier\Contracts\Notification
      */
-    public function setTitle($title);
+    public function setTitle(string $title): \Joli\JoliNotif\Notification;
 
     /**
      * @return string
@@ -40,7 +40,7 @@ interface Notification
      *
      * @return \NunoMaduro\LaravelDesktopNotifier\Contracts\Notification
      */
-    public function setBody($body);
+    public function setBody(string $body): \Joli\JoliNotif\Notification;
 
     /**
      * @return string
@@ -52,5 +52,5 @@ interface Notification
      *
      * @return \NunoMaduro\LaravelDesktopNotifier\Contracts\Notification
      */
-    public function setIcon($icon);
+    public function setIcon(string $icon): \Joli\JoliNotif\Notification;
 }

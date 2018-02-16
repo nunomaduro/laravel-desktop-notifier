@@ -39,7 +39,7 @@ class Notifier implements NotifierContract
     /**
      * {@inheritdoc}
      */
-    public function isSupported()
+    public function isSupported(): bool
     {
         return $this->notifier->isSupported();
     }
@@ -47,7 +47,7 @@ class Notifier implements NotifierContract
     /**
      * {@inheritdoc}
      */
-    public function getPriority()
+    public function getPriority(): int
     {
         return $this->notifier->getPriority();
     }
@@ -55,7 +55,7 @@ class Notifier implements NotifierContract
     /**
      * {@inheritdoc}
      */
-    public function send(\Joli\JoliNotif\Notification $notification)
+    public function send(\Joli\JoliNotif\Notification $notification): bool
     {
         return $this->notifier->send($notification);
     }
