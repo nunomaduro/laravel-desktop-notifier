@@ -11,22 +11,48 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use Illuminate\Support\ServiceProvider;
 use Joli\JoliNotif\NotifierFactory;
-use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification as NotificationContract;
+use Illuminate\Console\Command;
+use Illuminate\Support\ServiceProvider;
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier as NotifierContract;
+use NunoMaduro\LaravelDesktopNotifier\Contracts\Notification as NotificationContract;
 
 /**
  * The is the Laravel Desktop Notifier service provider class.
- *
- * @author Nuno Maduro <enunomaduro@gmail.com>
  */
 class LaravelDesktopNotifierServiceProvider extends ServiceProvider
 {
     /**
-     * Register the laravel desktop notifier implementation.
-     *
-     * @return void
+     * {@inheritdoc}
+     */
+    public function boot()
+    {
+        /*
+         * Sends a desktop notification.
+         *
+         * @param  string $title
+         * @param  string $body
+         * @param  string|null $icon
+         *
+         * @return void
+         */
+        Command::macro(
+            'notify',
+            function (string $text, string $body, $icon = null) {
+                $notifier = $this->app[Contracts\Notifier::class];
+
+                $notification = $this->app[Contracts\Notification::class]
+                    ->setTitle($text)
+                    ->setBody($body)
+                    ->setIcon($icon);
+
+                $notifier->send($notification);
+            }
+        );
+    }
+
+    /**
+     * {@inheritdoc}
      */
     public function register()
     {
