@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/nunomaduro/laravel-desktop-notifier/stable/docs/icon.png" width="100%">
+    <img src="https://raw.githubusercontent.com/nunomaduro/laravel-desktop-notifier/stable/docs/icon.png" width="50%">
 </p>
 
 <p align="center">
