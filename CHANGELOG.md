@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.3] - 2018-02-26
+### Added
+- Fixes `Undefined property` on macro
+
 ## [2.0.0] - 2018-02-16
 ### Added
 - Support to Laravel 5.6

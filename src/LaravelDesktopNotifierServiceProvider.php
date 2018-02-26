@@ -36,22 +36,19 @@ class LaravelDesktopNotifierServiceProvider extends ServiceProvider
          *
          * @return void
          */
-        Command::macro(
-            'notify',
-            function (string $text, string $body, $icon = null) {
-                $notifier = $this->app[Contracts\Notifier::class];
+        Command::macro('notify', function (string $text, string $body, $icon = null) {
+            $notifier = $this->laravel[Contracts\Notifier::class];
 
-                $notification = $this->app[Contracts\Notification::class]
-                    ->setTitle($text)
-                    ->setBody($body);
+            $notification = $this->laravel[Contracts\Notification::class]
+                ->setTitle($text)
+                ->setBody($body);
 
-                if (! empty($icon)) {
-                    $notification->setIcon($icon);
-                }
-
-                $notifier->send($notification);
+            if (! empty($icon)) {
+                $notification->setIcon($icon);
             }
-        );
+
+            $notifier->send($notification);
+        });
     }
 
     /**
