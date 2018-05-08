@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.4] - 2018-05-08
+### Changed
+- Use semver caret operator on `composer.json`.
+
 ## [2.0.3] - 2018-02-26
 ### Added
 - Fixes `Undefined property` on macro
