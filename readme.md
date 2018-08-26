@@ -12,7 +12,7 @@
 
 ## About Laravel Desktop Notifier
 
-Laravel Desktop Notifier was created by, and is maintained by [Nuno Maduro](https://github.com/nunomaduro), and is a [JoliNotif](https://github.com/jolicode/JoliNotif) wrapper for Laravel Console Commands.
+Laravel Desktop Notifier was created by, and is maintained by [Nuno Maduro](https://github.com/nunomaduro), and is a [JoliNotif](https://github.com/jolicode/JoliNotif) wrapper for Laravel Console Commands. Works on Linux, Windows & MacOS.
 
 ## Installation
 
