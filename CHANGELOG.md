@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.4.0] - 2020-09-01
+### Added
+- Support for Laravel 8
+
+### Removed
+- Support for PHP <7.2.5
+- Support for Laravel 5
+
 ## [2.3.0] - 2020-01-15
 ### Added
 - Support to Laravel 7
