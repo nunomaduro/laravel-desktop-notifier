@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://styleci.io/repos/94141482"><img src="https://styleci.io/repos/94141482/shield" alt="StyleCI Status"></img></a>
-    <a href="https://travis-ci.org/nunomaduro/laravel-desktop-notifier"><img src="https://img.shields.io/travis/nunomaduro/laravel-desktop-notifier/stable.svg?style=flat-square" alt="Build Status"></img></a>
+    <a href="https://github.com/nunomaduro/laravel-desktop-notifier/actions"><img src="https://img.shields.io/github/workflow/status/nunomaduro/laravel-desktop-notifier/Tests/stable.svg?style=flat-square" alt="Build Status"></img></a>
     <a href="https://scrutinizer-ci.com/g/nunomaduro/laravel-desktop-notifier"><img src="https://img.shields.io/scrutinizer/g/nunomaduro/laravel-desktop-notifier.svg?style=flat-square" alt="Quality Score"></img></a>
     <a href="https://github.com/nunomaduro/laravel-desktop-notifier/releases"><img src="https://img.shields.io/github/release/nunomaduro/laravel-desktop-notifier.svg?style=flat-square" alt="Latest Version"></img></a>
     <a href="https://packagist.org/packages/nunomaduro/laravel-console-task"><img src="https://poser.pugx.org/nunomaduro/laravel-console-task/license.svg" alt="License"></a>
