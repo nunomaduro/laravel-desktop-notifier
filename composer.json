@@ -4,7 +4,7 @@
     "keywords": ["laravel", "framework", "console", "artisan", "php", "wrapper", "JoliNotif", "notification", "notifier", "Nuno Maduro", "NunoMaduro"],
     "license": "MIT",
     "require": {
-        "php": "^7.2.5",
+        "php": "^7.2.5|^8.0",
         "illuminate/support": "^6.0|^7.0|^8.0",
         "illuminate/console": "^6.0|^7.0|^8.0",
         "jolicode/jolinotif": "^2.0"
