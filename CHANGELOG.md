@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.5.1] - 2020-10-30
+### Changed
+- Update minimum Illuminate component versions for PHP 8 ([#23](https://github.com/nunomaduro/laravel-desktop-notifier/pull/23))
+
 ## [2.5.0] - 2020-10-30
 ### Added
 - Add support for PHP 8 ([#21](https://github.com/nunomaduro/laravel-desktop-notifier/pull/21))
