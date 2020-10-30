@@ -26,8 +26,9 @@ composer require nunomaduro/laravel-desktop-notifier
 
 ## Usage
 
-```php
+Once installed, the `notify()` method macro will be available in any of your Artisan commands.
 
+```php
 class ZondaCommand extends Command
 {
     public function handle()
@@ -36,6 +37,14 @@ class ZondaCommand extends Command
     }
 }
 ```
+
+You can add an icon to the notification by passing a 3rd argument with the path to the icon:
+
+```php
+$this->notify('With a logo!', 'This has a logo', resource_path('path/to/icon.png');
+```
+
+To learn more about Artisan commands, see the [Laravel documentation](https://laravel.com/docs/artisan).
 
 ## Contributing
 
