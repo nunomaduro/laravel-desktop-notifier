@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.6.0] - 2022-01-13
+### Added
+- Laravel 9 support
+
 ## [2.5.1] - 2020-10-30
 ### Changed
 - Update minimum Illuminate component versions for PHP 8 ([#23](https://github.com/nunomaduro/laravel-desktop-notifier/pull/23))
