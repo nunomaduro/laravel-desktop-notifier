@@ -10,7 +10,7 @@
         "jolicode/jolinotif": "^2.0"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^5.5",
+        "graham-campbell/testbench": "^5.7",
         "phpunit/phpunit": "^8.5.8|^9.0"
     },
     "authors": [
