@@ -29,7 +29,7 @@ class Notifier implements NotifierContract
     /**
      * Notifier constructor.
      *
-     * @param \Joli\JoliNotif\Notifier $notifier
+     * @param  \Joli\JoliNotif\Notifier  $notifier
      */
     public function __construct(BaseNotifier $notifier)
     {
