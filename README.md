@@ -16,7 +16,7 @@ Laravel Desktop Notifier was created by, and is maintained by [Nuno Maduro](http
 
 ## Installation
 
-> **Requires [PHP 7.2.5+](https://php.net/releases/)**
+> **Requires [PHP 8.1+](https://php.net/releases)**
 
 Require Laravel Desktop Notifier using [Composer](https://getcomposer.org):
 
