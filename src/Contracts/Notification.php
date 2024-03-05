@@ -24,7 +24,6 @@ interface Notification
     public function getTitle();
 
     /**
-     * @param  string  $title
      * @return \NunoMaduro\LaravelDesktopNotifier\Contracts\Notification
      */
     public function setTitle(string $title): \Joli\JoliNotif\Notification;
@@ -35,7 +34,6 @@ interface Notification
     public function getBody();
 
     /**
-     * @param  string  $body
      * @return \NunoMaduro\LaravelDesktopNotifier\Contracts\Notification
      */
     public function setBody(string $body): \Joli\JoliNotif\Notification;
@@ -46,7 +44,6 @@ interface Notification
     public function getIcon();
 
     /**
-     * @param  string  $icon
      * @return \NunoMaduro\LaravelDesktopNotifier\Contracts\Notification
      */
     public function setIcon(string $icon): \Joli\JoliNotif\Notification;
