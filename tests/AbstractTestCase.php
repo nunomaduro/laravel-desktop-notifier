@@ -23,10 +23,8 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
 {
     /**
      * Get the service provider class.
-     *
-     * @return string
      */
-    protected function getServiceProviderClass()
+    protected static function getServiceProviderClass(): string
     {
         return LaravelDesktopNotifierServiceProvider::class;
     }
