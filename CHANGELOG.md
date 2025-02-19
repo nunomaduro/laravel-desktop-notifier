@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.9.0 - 2025-02-19
+
+### Added
+- Add support for Laravel 12 ([#34](https://github.com/nunomaduro/laravel-desktop-notifier/pull/34))
+
+## 2.8.1 - 2024-04-09
+
+### Changed
+- Add `.github` to export ignores ([#33](https://github.com/nunomaduro/laravel-desktop-notifier/pull/33))
+
 ## 2.8.0 - 2024-03-05
 
 ### Added
