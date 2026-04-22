@@ -8,6 +8,7 @@
     <a href="https://scrutinizer-ci.com/g/nunomaduro/laravel-desktop-notifier"><img src="https://img.shields.io/scrutinizer/g/nunomaduro/laravel-desktop-notifier.svg?style=flat-square" alt="Quality Score"></img></a>
     <a href="https://packagist.org/packages/nunomaduro/laravel-desktop-notifier"><img src="https://img.shields.io/packagist/v/nunomaduro/laravel-desktop-notifier.svg?style=flat-square" alt="Latest Version"></img></a>
     <a href="https://packagist.org/packages/nunomaduro/laravel-console-task"><img src="https://img.shields.io/packagist/l/nunomaduro/laravel-console-task.svg?style=flat-square" alt="License"></a>
+    <a href="https://youtube.com/@nunomaduro?sub_confirmation=1"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCO_hYZF2gb_CyG5sA7ArlGg?style=flat&label=youtube&color=brightgreen"></a>
 </p>
 
 ## About Laravel Desktop Notifier
