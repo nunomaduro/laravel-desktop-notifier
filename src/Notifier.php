@@ -11,7 +11,7 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier;
 
-use Joli\JoliNotif\Notifier as BaseNotifier;
+use Joli\JoliNotif\NotifierInterface;
 use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier as NotifierContract;
 
 /**
@@ -22,32 +22,16 @@ use NunoMaduro\LaravelDesktopNotifier\Contracts\Notifier as NotifierContract;
 class Notifier implements NotifierContract
 {
     /**
-     * @var \Joli\JoliNotif\Notifier
+     * @var \Joli\JoliNotif\NotifierInterface
      */
     protected $notifier;
 
     /**
      * Notifier constructor.
      */
-    public function __construct(BaseNotifier $notifier)
+    public function __construct(NotifierInterface $notifier)
     {
         $this->notifier = $notifier;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function isSupported(): bool
-    {
-        return $this->notifier->isSupported();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getPriority(): int
-    {
-        return $this->notifier->getPriority();
     }
 
     /**

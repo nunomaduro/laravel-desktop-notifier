@@ -11,13 +11,13 @@
 
 namespace NunoMaduro\LaravelDesktopNotifier\Contracts;
 
-use Joli\JoliNotif\Notifier as BaseNotifier;
+use Joli\JoliNotif\NotifierInterface;
 
 /**
  * Interface Notification.
  *
  * @author Nuno Maduro <enunomaduro@gmail.com>
  */
-interface Notifier extends BaseNotifier
+interface Notifier extends NotifierInterface
 {
 }
